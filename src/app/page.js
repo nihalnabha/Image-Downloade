@@ -1,9 +1,9 @@
 "use client"
 
 import React from 'react';
-import Header from '../components/Header';
-import MainBody from '../components/MainBody';
-import Footer from '../components/Footer';
+import Header from '../components/header';
+import MainBody from '../components/main-body';
+import Footer from '../components/footer';
 
 const Page = () => {
   return (
