@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .rating input:checked ~ label,
+      .rating input:focus ~ label {
+        @apply bg-yellow-400;
+      }
+      .rating input:checked ~ label:before,
+      .rating input:focus ~ label:before {
+        @apply content['\2605'];
+      }
+      .rating input:disabled ~ label:before {
+        @apply text-gray-300;
+      }
+    </style>
+    <title>Star Rating Example</title>
+  </head>
+  <body>
+    <div class="rating">
+      <input type="radio" name="rating" id="rating-1" value="1" />
+      <label for="rating-1">1</label>
+      <input type="radio" name="rating" id="rating-2" value="2" />
+      <label for="rating-2">2</label>
+      <input type="radio" name="rating" id="rating-3" value="3" />
+      <label for="rating-3">3</label>
+      <input type="radio" name="rating" id="rating-4" value="4" />
+      <label for="rating-4">4</label>
+      <input type="radio" name="rating" id="rating-5" value="5" />
+      <label for="rating-5">5</label>
+    </div>
+  </body>
+</html>
